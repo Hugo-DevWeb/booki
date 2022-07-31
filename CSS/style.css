@@ -1,0 +1,810 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+	font-family: Raleway, 'sans-serif;';
+	box-sizing: border-box;
+}
+/* Police de base et contenu de la largeur du contenant*/
+
+body{
+	margin: 0;
+	padding: 0;
+}
+/* margin et padding initialisé à 0 */
+
+a{
+	text-decoration: none;
+	color: black;
+}
+/* Uniformisation de tous les liens */
+
+:root{
+    --blue: #0065FC;
+    --blue-light: #DEEBFF;
+    --grey-light: #F2F2F2;
+}
+/* Variables des couleurs utilisées */
+
+/* HEADER ET NAV */
+header {
+	height: 110px;
+	display: flex;
+}
+/* Hauteur et disposition des elements */
+
+#logo img {
+	width: 24%;
+	margin: 45px 55px;
+}
+/* Taille et position du logo */
+
+header nav {
+	position: absolute;
+	right: 100px;
+}
+/* Position du navigateur */
+
+#nav_header{
+	display: flex;
+	height: 110px;
+}
+/* hauteur et disposition du navigateur */
+
+#nav_header a{
+	padding: 45px 40px;
+	border-top: 3px solid white;
+	font-size: 16px;
+	font-weight: 500;
+}
+/* Mise en forme du contenu de navigateur */
+
+#nav_header a:hover{
+	border-top: 3px solid var(--blue);
+	color: var(--blue);
+}
+/* Animation au survol du navigateur */
+/* FIN DU HEADER ET NAV */
+
+main {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+/* Positionnement du corps du site */
+
+h1{
+	margin-top: 17px;
+	font-size: 22px;
+	margin-bottom: -7px;
+}
+/* Mise en forme du titre principal*/
+
+#title p{
+	font-weight: 500;
+	font-size: 16px;
+}
+/* Mise en forme du sous-titre principal */
+
+form{
+	border: 1px solid white;
+	border-radius: 15px;
+	height: 52px;
+	display: flex;
+	overflow: hidden;
+	font-size: 18px;
+}
+/* mise en forme du formulaire forme, taille apparence */
+
+form i{
+	flex-basis: 50px;
+	text-align: center;
+	padding-top: 18px;
+	background-color: var(--grey-light);
+}
+/* Mise en forme logo localisation */
+
+input{
+	flex-basis: 240px;
+	border: none;
+	border-top: 1px solid var(--grey-light);
+	border-bottom: 1px solid var(--grey-light);
+	padding-left: 15px;
+}
+/* Mise en forme zone de texte */
+
+input::placeholder{
+
+	font-weight: 700;
+	color: black;
+	font-size: 18px;
+}
+/* Texte d'exemple */
+
+form button{
+	flex-basis: 135px;
+	border: none;
+	background-color: var(--blue);
+	padding: 15px;
+	border-radius: 0 15px 15px 0;
+	cursor: pointer;
+}
+	
+/* Bouton de recherche formulaire */
+.search-button-text{
+	color: white;
+	font-weight: 700;
+    font-size: 18px;
+}
+/* Logo bouton telephone */
+button i{
+	visibility: hidden;
+}
+/* Filtres de recherche */
+#search-filter{
+	display: flex;	
+	margin-top: 30px;
+}
+/* Texte filtre */
+#search-filter h4{
+	margin: 15px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+/* conteneur des items */
+#list-filter{
+	display: flex;
+    gap: 26px;
+}
+/* Items de filtres */
+.items-filter{
+	border: 3px solid var(--grey-light);
+	border-radius: 25px;
+	display: inherit;
+	align-items: center;
+}
+/* conteneur Logo Item */
+.items-filter div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--blue-light);
+    border-radius: 50px;
+    height: 105%;
+    width: 49px;
+	margin-left: -1px;
+}
+/* Logo items */
+.items-filter i{
+	color: var(--blue);
+	font-size: 19px;
+}
+.items-filter:hover{
+	background-color: var(--blue);
+}
+/* Texte items */
+.items-filter span{
+	margin: 10px 16px 10px 7px;
+	font-size: 94%;
+	font-weight: 700;
+}
+/* conteneur Texte post filtres */
+#info-search {
+	display: flex;
+	margin-top: 20px;
+}
+/* Logo texte post filtres */
+#info-search i{
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid var(--grey-light);
+	border-radius: 50px;
+	height: 25px;
+	width: 2%;
+	color: var(--blue);
+	font-size: 14px;
+}
+/* texte post filtre */
+#info-search p{
+	margin-left: 10px;
+	font-weight: 500;
+}
+/* resultat de recherche */
+#search-result{
+	display: flex;
+	width: 98%;
+	flex-wrap: wrap;
+}
+/* Hébergement et populaire */
+#accommodation{
+	display: flex;
+	
+	margin-top: 20px;
+	width: 100%;
+	justify-content: space-between;
+}
+/* conteneur des hébergement */
+#accommodation-container{
+	width: 66%;
+	background-color: var(--grey-light);
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 20px;
+	
+}
+/* Titre conteneur */
+#accommodation-container h2{
+	font-size: 22px;
+	width: 100%;
+	margin-left: 35px;
+	margin-top: 40px;
+	margin-bottom: 25px;
+	
+
+}
+/* carte d'hébergement */
+.accommodation-card{
+	border: 4px solid white;
+    border-radius: 20px;
+    width: 30%;
+    margin-bottom: 29px;
+    padding-bottom: 6px;
+    background-color: white;
+    box-shadow: 0 0 16px #bbb4b3;
+}
+/* Titres des cartes d'hébergement */
+.accommodation-card h3{
+	font-size: 16px;
+	line-height: 15px;
+}
+/* Sous texte des carte d'hébergement */
+.accommodation-card p{
+	font-size: 14px;
+	font-weight: 400;
+}
+/* Postionnement des textes des cartes d'hébergements */
+.accommodation-card-text{
+	margin: 0 auto 0 10px
+}
+/* Images des carte d'hébergement */
+.accommodation-card img{
+    height: 100px;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+	object-fit: cover;
+
+}
+/* Logo avis notation pleine*/
+.full-star{
+	color: var(--blue);
+}
+/* Logo avis notation vide */
+.empty-star{
+	color: var(--grey-light);
+}
+/* Positionnement des avis */
+.accommodation-card .notation{
+	display: flex;
+	letter-spacing: -1px;
+	margin-left: 8px;
+}
+/* Taille et mise en forme du logo */
+#accommodation i{
+	font-size: 12px;
+}
+
+/* Conteneur des cartes d'hébergements */ 
+#accommodation-card{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin: 0px 10px;
+	line-height: 30px;
+}
+/* Afficher plus */
+#more-content{
+	margin-top: 0;
+	margin-left: 40px;
+	margin-bottom: 45px;
+	font-weight: 700;
+	font-size: 18px;
+}
+/* Populaire conteneur */
+#title-container{
+	
+	align-items: center;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	height: fit-content;
+	margin-top: 21px;
+}
+/* Titre du container et logo */
+#title-container h2{
+	font-size: 22px;
+}
+#title-container i{
+	font-size: 20px;
+}
+/* Img des cartes populaires */
+#popular img{
+	height: 140px;
+	width: 38%;
+	border-radius: 15px 0 0 15px;
+	object-fit: cover;
+}
+/* Bloc populaire */
+#popular {
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 31%;
+	background-color: var(--grey-light);
+}
+/* bloc des carte + populaire */
+#popular-card{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 78%;
+	margin-bottom: 33px;
+}
+/* carte des plus populaire */
+.popular-card {
+	display: flex;
+	background-color: white;
+	height: 140px;
+	width: 84%;
+	border-radius: 15px;
+	border: 4px solid white;
+	overflow: hidden;
+	box-shadow: 0 0 16px #bbb4b3;
+}
+/* Info carte */
+.popular-card-info{
+	width: 62%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 10px 0 15px 10px;
+} 
+/* Titre des cartes populaire */
+.popular-card h3{
+	font-size: 16px;
+	font-weight: 700;
+	margin: 0;
+}
+/* Prix des carte populaire */
+.popular-card p{
+	font-size: 14px;
+	font-weight: 400;
+	margin-top: 5px;
+}
+/* Lien des cartes */
+.popular-card a{
+	display: flex;
+	width: 100%;
+}
+/* note des cartes */
+.popular-card .notation{
+	display: flex;
+	letter-spacing: -1px;
+}
+/* Bloc activités */
+#activity{
+	width: 100%;
+	margin-top: 3%;
+}
+/* Titre bloc activités */
+#activity h2{
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 2%;
+}
+/* Bloc des crates d'activités */
+#activity-card{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: space-between;
+	flex-wrap: wrap;
+	height: 450px;
+	width: 100%;
+}
+/* Ligne 417 - Ligne 566 Carte d'activité + titres */
+#activity-card-a{
+	border-radius: 20px;
+	height: 450px;
+	width: 23%;
+	overflow: hidden;
+	box-shadow: 0 0 16px #bbb4b3;
+	background-image: url(../images/activites/4_small/vieuxport2.jpg);
+	background-position: top;
+	
+}
+
+#activity-card-a h3{
+	padding-left: 20px;
+	font-size: 16px;
+}
+#activity-card-a div{
+	background-color: #ffffff;
+	width: 100%;
+}
+#activity-card-a a{ 
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+
+}
+
+#activity-card-b h3{
+	padding-left: 20px;
+	font-size: 16px;
+}
+#activity-card-b{
+	border-radius: 20px;
+	height: 250px;
+	width: 23%;
+	overflow: hidden;
+	box-shadow: 0 0 16px #bbb4b3;
+	background-image: url(../images/activites/4_small/fortdepomegues2.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#activity-card-b div{
+	background-color: #ffffff;
+	width: 100%;
+}
+#activity-card-b a{ 
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+
+}
+/* toutes les cards après sont valide 100% */
+
+#activity-card-c div{
+	background-color: #ffffff;
+	width: 100%;
+}
+#activity-card-c h3{
+	padding-left: 20px;
+	font-size: 16px;
+	background-color: white;
+}
+#activity-card-c a{ 
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+
+}
+#activity-card-c{
+	border-radius: 20px;
+	height: 150px;
+	width: 23%;
+	overflow: hidden;
+	box-shadow: 0 0 16px #bbb4b3;
+	background-image: url(../images/activites/4_small/ilesdufrioul3.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#activity-card-d{
+	border-radius: 20px;
+	height: 450px;
+	width: 23%;
+	overflow: hidden;
+	box-shadow: 0 0 16px #bbb4b3;
+	background-image: url(../images/activites/4_small/parcnationaldescalanques.jpg);
+	background-position: top;
+	
+}
+
+#activity-card-d h3{
+	padding-left: 20px;
+	font-size: 16px;
+}
+#activity-card-d div{
+	background-color: #ffffff;
+	width: 100%;
+}
+#activity-card-d a{ 
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+
+}
+
+
+#activity-card-e{
+	height: 190px;
+	width: 23%;
+	border-radius: 20px;
+	overflow: hidden;
+	background-image: url(../images/activites/4_small/notredamedelagarde2.jpg);
+	box-shadow: 0 0 16px #bbb4b3;
+	background-size: cover;
+}
+#activity-card-e a{
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+}
+#activity-card-e div{
+	background-color: #ffffff;
+	width: 100%;
+}
+#activity-card-e h3{
+	padding-left: 20px;
+	font-size: 16px;
+	background-color: white;
+}
+#activity-card-f{
+	height: 210px;
+	width: 23%;
+	border-radius: 20px;
+	overflow: hidden;
+	background-image: url(../images/activites/4_small/parclongchamp2.jpg);
+	box-shadow: 0 0 16px #bbb4b3;
+	background-size: cover;
+}
+#activity-card-f a{
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+}
+#activity-card-f div{
+	background-color: #ffffff;
+	width: 100%;
+}
+#activity-card-f h3{
+	padding-left: 20px;
+	font-size: 16px;
+	background-color: white;
+}
+/* Pied de pages */
+footer{
+	display: flex;
+	width: 100%;
+	margin-top: 50px;
+	background-color: var(--grey-light);
+	padding-bottom: 25px;
+
+	
+}
+/* Navigateur de pied de page */
+footer nav{
+	width: 85%;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 25px;
+}
+/* menu du navigateur */
+.footer-menu{
+	width: 20%;
+
+}
+/* Liste a puce du navigateur */
+.footer-menu ul{
+	padding: 0px;
+	line-height: 30px;
+}
+/* Puce de la liste a puce du navigateur de pied de page */
+.footer-menu li{
+	list-style-type: none;
+}
+/* Breakpoint pour les tablettes */
+@media screen and (max-width: 992px){
+	header{
+		height: auto;
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
+	}
+	#logo{
+		text-align: center;
+		width: 100%;
+	}
+	#logo img{
+		width: 11%;
+	}
+	header nav{
+		position: inherit;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	#nav_header{
+
+		height: 50px;
+
+	}
+	#nav_header a{
+		width: 50%;
+		text-align: center;
+		border-bottom: 2px solid var(--grey-light);
+		padding: 0;
+	}
+	
+	#nav_header a:hover{
+		border-top: none;
+		border-bottom: 2px solid var(--blue);
+	}
+	#nav_header a:active{
+		border-bottom: 2px solid var(--blue);
+		color: var(--blue);
+	}
+	#search-filter{
+		flex-wrap: wrap;
+	}
+	#search-filter h4{
+		display: none;
+	}
+	#list-filter{
+		flex-wrap: wrap;
+	}
+	.items-filter{
+		margin-top: 5px;
+	}
+	#accommodation {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#accommodation-container{
+		margin-bottom: 30px;
+		width: 100%;
+	}
+	#popular{
+		width: 100%;
+		height: unset;
+		padding-bottom: 20px;
+
+	}
+	.popular-card{
+		height: unset;
+		width: 100%;
+		margin: 10px;
+	}
+	#popular img{
+		width: 150px;
+		border-radius: 15px 0 0 15px;
+	}
+	.popular-card .notation{
+		margin-top: 0;
+	}
+	#title-container {
+		width: 92%;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 15px;
+		margin-bottom: 0px;
+	}
+	#activity{
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+	#activity-card{
+		height: 850px;
+		
+		justify-content: space-around;
+		align-items: center;
+	}
+	#activity-card-a,#activity-card-b,#activity-card-c,#activity-card-d,#activity-card-e,#activity-card-f{
+		height: 250px;
+		width: 45%;
+		background-size: cover;
+	}
+	footer nav{
+		width: 100%;
+	}
+	
+}
+/* Breakpoint telephone */
+@media screen and (max-width: 768px){
+	main{
+		margin: 0;
+	}
+	#logo img{
+		width: 20%;
+		margin-bottom: 25px;
+	}
+	#title{
+		margin-left: 15px;
+	}
+	form{
+		margin-left: 15px;
+		margin-right: 15px;
+
+	}
+	input{
+		flex-basis: 100%;
+	}
+	form button{
+		flex-basis: unset;
+	}
+	button span{ 
+		display: none;
+	}
+	button i{
+		visibility: visible;
+		background-color: var(--blue);
+	}
+	#search-result{
+		width: 100%;
+	}
+	#icon-search{
+		margin: -15px 10px 10px 10px;
+		font-size: 16px;
+	}
+	#icon-geoloc{
+		flex-basis: 68px; 
+	}
+	#search-filter{
+		margin-left: 15px;
+	}
+	#info-search{
+		margin-left: 15px;
+	}
+	#list-filter{
+		gap: 10px;
+	}
+	.search-button{
+		border-radius: 15px;
+	}
+	
+	.accommodation-card{
+		width: 93%;
+	}
+	#accommodation{
+		flex-direction: column-reverse;
+	}
+	#accommodation-container{
+		background-color: white;
+	}
+	.accomodation-card p{
+		line-height: 24px;
+	} 
+	.accommodation-card .notation{
+		line-height: 20px;
+	}
+	#popular{
+		border-radius: 0;
+	}
+	#popular-card{
+		width: 93%;
+	}
+	.popular-card {
+		width: 100%;
+	}
+	#activity h2{
+		margin-left: 15px;
+		margin-bottom: 20px;
+	}
+	#activity-card{
+		height: unset;
+		align-content: center;
+		gap: 24px;
+	}
+	#activity-card-a,#activity-card-b,#activity-card-c,#activity-card-d,#activity-card-e,#activity-card-f{
+		width: 90%;
+		height: 215px;
+	}
+	.footer-menu{
+		width: 100%;
+		padding-left: 51px;
+	}
+	footer nav{
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	
+
+
+}
+
+	
+
